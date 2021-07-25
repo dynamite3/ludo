@@ -1,0 +1,130 @@
+
+.header{
+
+    height:140px;
+    background: rgb(206,210,185);
+    background: radial-gradient(circle, rgba(206,210,185,1) 26%, rgba(182,141,36,1) 100%);
+    align-content: center;
+    text-align: center;
+
+}
+
+.container{
+    margin: 23px;
+    display: grid;
+    grid-template-columns: 320px 170px 320px;
+    grid-template-rows: 320px 170px 320px ;
+
+}
+
+
+.svm{
+    display: grid;
+    background-color: lightgray;
+    padding: 10px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px ;
+
+
+}
+.shm{
+    display: grid;
+    padding: 10px;
+    background-color: lightgray;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px ;
+
+
+}
+
+.playerc{
+    
+    display:grid;
+    padding: 10px;
+    align-content: center;
+    padding: 60px;
+    grid-template-rows: 100px 100px;
+    grid-template-columns:100px 100px ;
+    transform: rotate(45deg);
+
+}
+.r .pbc{
+    background: rgb(206,210,185);
+    background: radial-gradient(circle, rgba(206,210,185,1) 16%, rgba(182,36,36,1) 100%);
+}
+.g .pbc{
+    background: rgb(206,210,185);
+    background: radial-gradient(circle, rgba(206,210,185,1) 16%, rgba(47,144,59,1) 100%);
+}
+.y .pbc{
+    background: rgb(206,210,185);
+    background: radial-gradient(circle, rgba(206,210,185,1) 16%, rgba(230,238,30,1) 100%);
+}
+.b .pbc{
+    background: rgb(206,210,185);
+    background: radial-gradient(circle, rgba(206,210,185,1) 16%, rgba(43,36,182,1) 100%);
+}
+
+
+
+.pbc{
+    border: solid black 1px;
+}
+
+.tiles{
+    
+    border:solid black 1px;
+    text-align: center;
+}
+
+
+
+.r22{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: rgb(215,175,203);
+    background: radial-gradient(circle, rgba(215,175,203,1) 32%, rgba(218,83,210,1) 100%);
+    width: 119px;
+    align-content: center;
+    height: 102px;
+    margin: 10px;
+    text-align: center;
+}
+
+.r22:hover{
+    background: rgb(205,156,190);
+    background: radial-gradient(circle, rgba(205,156,190,1) 32%, rgba(143,24,136,1) 100%);
+    
+}
+
+.pbc{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.r22 {
+    
+    width: 94px;
+    align-content: center;
+    height: 93px;
+
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.8s;
+    overflow: hidden;
+    cursor: pointer;
+    transform: rotate(0deg);
+    margin: auto;
+    transition: transform 0.2s;
+  }
+  
+  .r22:active {
+    transform: rotate(360deg);
+
+  }
+
+  .r22:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
